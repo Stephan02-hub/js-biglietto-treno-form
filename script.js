@@ -43,7 +43,7 @@ ticketNameElm.innerHTML = fullNameFieldElm.value
 ticketOffertElm.innerHTML = ticketOffert
 ticketTrainCarElm.innerHTML = getRndInteger(1, 10)
 ticketCpCodeElm .innerHTML = getRndInteger(90000, 99999)
-ticketPrinceElm.innerHTML = ticketPrince + '€'
+ticketPrinceElm.innerHTML = ticketPrice + '€'
 
 ticketElm.classList.remove('d-none')
 
