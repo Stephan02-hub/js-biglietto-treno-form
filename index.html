@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <form id="create-ticket-form"></form>
-  <div>
+  <form id="create-ticket-form">
+   <div>
     <label for="full name">Nome e cognome</label>
     <input id="full-name" type="text" required>
-  </div>
+   </div>
      <div>
       <label for="km">km da percorrere</label>
       <input id="km" type="number" min="1" required>
@@ -25,9 +26,20 @@
       </select>
      </div>
      <div>
-      <button type="button">Genera</button>
-      <button type="reset">Annulla</button>
+      <button id="btn-create" type="button">Genera</button>
+      <button id="btn-reset" type="reset">Annulla</button>
      </div>
+  </form>
+  
+  <div id="ticket" class="d-none"> 
+    <div id="ticket-name"></div>
+    <divi id="ticket-offert"></div>
+      <div id="ticket-traine-car"></div>
+      <div id="ticket-cp-code"></div>
+      <div id="ticket-price"></div>
+
+  </div>
+
     <script src="script.js"></script>
 </body>
 </html>
